@@ -1,0 +1,142 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fond"
+    android:padding="16dp">
+
+    <!-- City Name Text -->
+    <TextView
+        android:id="@+id/cityNameText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Prayer Times"
+        android:drawableLeft="@drawable/logomasjid"
+
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="#1C2246"
+        android:gravity="center"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp"
+        android:padding="8dp"
+        android:background="@drawable/rounded_textview_background"/>
+
+    <!-- Fajr Prayer Time -->
+    <TextView
+        android:id="@+id/fajrTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Fajr: 05:00 AM"
+        android:drawableLeft="@drawable/fajer"
+
+        android:textSize="16sp"
+        android:textColor="#1C2246"
+        android:gravity="start|center_vertical"
+        android:padding="12dp"
+        android:background="@drawable/rounded_textview_background"
+        android:layout_below="@id/cityNameText"
+        android:layout_marginTop="10dp"/>
+
+    <!-- Dhuhr Prayer Time -->
+
+    <!-- Asr Prayer Time -->
+    <TextView
+        android:id="@+id/dhuhrTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/fajrTime"
+        android:layout_marginTop="-1dp"
+        android:background="@drawable/rounded_textview_background"
+        android:drawableLeft="@drawable/dohr"
+        android:gravity="start|center_vertical"
+        android:padding="12dp"
+        android:text="Dhuhr: 12:30 PM"
+        android:textColor="#1C2246"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/asrTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Asr: 03:45 PM"
+        android:textSize="16sp"
+        android:drawableLeft="@drawable/aser"
+
+        android:textColor="#1C2246"
+        android:gravity="start|center_vertical"
+        android:padding="12dp"
+        android:background="@drawable/rounded_textview_background"
+        android:layout_below="@id/dhuhrTime"
+        android:layout_marginTop="10dp"/>
+
+    <!-- Maghrib Prayer Time -->
+    <TextView
+        android:id="@+id/maghribTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Maghrib: 06:10 PM"
+        android:textSize="16sp"
+        android:textColor="#1C2246"
+        android:gravity="start|center_vertical"
+        android:padding="12dp"
+        android:drawableLeft="@drawable/maghrb"
+
+        android:background="@drawable/rounded_textview_background"
+        android:layout_below="@id/asrTime"
+        android:layout_marginTop="10dp"/>
+
+    <!-- Isha Prayer Time -->
+    <TextView
+        android:id="@+id/ishaTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Isha: 07:30 PM"
+        android:textSize="16sp"
+        android:textColor="#1C2246"
+        android:gravity="start|center_vertical"
+        android:padding="12dp"
+        android:drawableLeft="@drawable/ishaa"
+
+        android:background="@drawable/rounded_textview_background"
+        android:layout_below="@id/maghribTime"
+        android:layout_marginTop="10dp"/>
+
+    <!-- Countdown Timer Text -->
+    <TextView
+        android:id="@+id/countdownTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Time left: 00:00:00"
+        android:textSize="20sp"
+        android:drawableLeft="@drawable/baseline_timer_24"
+
+        android:textColor="#1C2246"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_below="@id/ishaTime"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:padding="12dp"
+        android:background="@drawable/rounded_textview_background"/>
+
+    <TextView
+        android:id="@+id/salatNameText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Fajr"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_below="@id/countdownTextView"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:visibility="gone"/>
+
+    <Button
+        android:id="@+id/pauseButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pause"
+        android:layout_below="@id/salatNameText"
+        android:layout_centerHorizontal="true"
+        android:visibility="gone"/>
+</RelativeLayout>

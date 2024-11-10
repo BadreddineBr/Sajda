@@ -1,0 +1,82 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fond"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:spacing="8dp">
+
+    <EditText
+        android:id="@+id/searchCity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Search for a city"
+        android:padding="12dp"
+        android:textColor="#333333"
+        android:background="@drawable/rounded_edittext_background"
+        android:textSize="16sp"
+        android:layout_marginBottom="16dp" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerViewCities"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:paddingBottom="16dp" />
+
+    <TextView
+        android:id="@+id/fajrTime"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:textColor="#333333"
+        android:padding="8dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/rounded_textview_background"
+        android:text="Fajr: 05:30 AM" />
+
+    <TextView
+        android:id="@+id/dhuhrTime"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:textColor="#333333"
+        android:padding="8dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/rounded_textview_background"
+        android:text="Dhuhr: 12:00 PM" />
+
+    <TextView
+        android:id="@+id/asrTime"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:textColor="#333333"
+        android:padding="8dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/rounded_textview_background"
+        android:text="Asr: 03:30 PM" />
+
+    <TextView
+        android:id="@+id/maghribTime"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:textColor="#333333"
+        android:padding="8dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/rounded_textview_background"
+        android:text="Maghrib: 06:15 PM" />
+
+    <TextView
+        android:id="@+id/ishaTime"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:textColor="#333333"
+        android:padding="8dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/rounded_textview_background"
+        android:text="Isha: 08:00 PM" />
+
+</LinearLayout>
